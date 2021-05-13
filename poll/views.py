@@ -14,14 +14,14 @@ def signup(request):
     context = {
         'form' : form
     }
-    return render(request, 'poll/signup.html', context)
+    return render(request, 'signup.html', context)
 
 def home(request):
     polls = Poll.objects.all()
     context = {
         'polls' : polls
     }
-    return render(request, 'poll/home.html', context)
+    return render(request, 'home.html', context)
 
 def create(request):
     if not request.user.is_authenticated:
@@ -38,7 +38,7 @@ def create(request):
     context = {
         'form' : form
     }
-    return render(request, 'poll/create.html', context)
+    return render(request, 'create.html', context)
 
 def update(request, poll_id):
     if not request.user.is_authenticated:
@@ -53,7 +53,7 @@ def update(request, poll_id):
     context = {
         'form' : form
     }
-    return render(request, 'poll/create.html', context)
+    return render(request, 'create.html', context)
 
 def delete(request, poll_id):
     if not request.user.is_authenticated:
@@ -81,11 +81,11 @@ def vote(request, poll_id):
     context = {
         'poll' : poll
     }
-    return render(request, 'poll/vote.html', context)
+    return render(request, 'vote.html', context)
 
 def results(request, poll_id):
     poll = Poll.objects.get(pk=poll_id)
     context = {
         'poll' : poll
     }
-    return render(request, 'poll/results.html', context)
+    return render(request, 'results.html', context)
