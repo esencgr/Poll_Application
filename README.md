@@ -46,7 +46,7 @@ python manage.py runserver
 
 #### HOME 
 
-![](images/aa.png)
+![](images/a.png)
 
 #### CREATE
 
