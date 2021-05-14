@@ -3,18 +3,6 @@ from django.http import HttpResponse, Http404
 from .forms import CreatePollForm
 from .models import Poll
 
-# def signup(request):
-#     if request.method == 'POST':
-#         form = CreateUserForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('home')
-#     else:
-#         form = CreateUserForm()
-#     context = {
-#         'form' : form
-#     }
-#     return render(request, 'signup.html', context)
 
 def home(request):
     polls = Poll.objects.all()
