@@ -3,16 +3,21 @@
 {% block title %}Login{% endblock %}
 
 {% block main %}
-   <h3> Login </h3>  
-   <hr>
 
-   <form method="POST">
-      {% csrf_token %}
-      {{form.as_p}}
-      <br>
-      <button type="submit" class="btn btn-danger">Login</button>
-
-   </form>
+   <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+         <h3> Login </h3>  
+         <hr>
+         <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <br>
+            <button type="submit" class="btn btn-danger">Login</button>
+      
+         </form>
+      
+      </div>
+    </div>
 
 
 {% endblock main%}
