@@ -24,7 +24,7 @@ python manage.py runserver
 
 Pages for Enduser
 
-![ss](images/1.png)
+![](images/1.png)
 
 
 Create SuperUser for Administration(for create, delete, update polls)
