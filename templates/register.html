@@ -3,15 +3,21 @@
 {% block title %}Register{% endblock %}
 
 {% block main%}   
-   <hr>
-   <h3> Register </h3>
-   <hr>
-
-   <form method = "post">
-      {% csrf_token %}
-      {{form.as_p}}
-      <br>
-      <button type="submit" class="btn btn-danger">Submit</button>
-   </form>
+{% load crispy_forms_tags %}
+ 
+   <div class="row">
+      <div class="col-lg-5 col-lg-offset-3">
+         <h3>Register</h3>  
+         <hr>
+         <form method="POST">
+            {% csrf_token %}
+            {{form|crispy}}
+            <br>
+            <button type="submit" class="btn btn-danger">Submit</button>
+      
+         </form>
+      
+      </div>
+    </div>
 
 {% endblock %}

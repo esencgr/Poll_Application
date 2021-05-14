@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'django_cleanup',
     'user',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,5 @@ STATICFILES_DIRS = [
 ]
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'poll/staticfiles/')
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
