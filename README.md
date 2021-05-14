@@ -24,7 +24,17 @@ python manage.py runserver
 
 Pages for Enduser
 
+HOME 
+
 ![](images/1.png)
+
+VOTE 
+
+![](images/2.png)
+
+RESULTS 
+
+![](images/4.png)
 
 
 Create SuperUser for Administration(for create, delete, update polls)
@@ -32,5 +42,19 @@ Create SuperUser for Administration(for create, delete, update polls)
 python manage.py createsuperuser
 python manage.py runserver
 ```
+Pages for Admin
+
+HOME 
+
+![](images/aa.png)
+
+CREATE
+
+![](images/b.png)
+
+UPDATE 
+
+![](images/c.png)
+
 
 After all these steps , you can start testing and developing this project. 
