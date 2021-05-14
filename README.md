@@ -17,7 +17,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### An EndUser participates in the survey and observes the results.
+### An EndUser participates in the survey and observes the results.(home - vote - results pages available)
 ```
 python manage.py runserver
 ```
@@ -37,7 +37,7 @@ python manage.py runserver
 ![](images/4.png)
 
 
-### Create SuperUser for Administration(for create, delete, update polls)
+### Create SuperUser for Administration(home - vote - results - create - delete pages available)
 ```
 python manage.py createsuperuser
 python manage.py runserver
