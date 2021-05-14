@@ -1,58 +1,58 @@
 # Poll_Application
-Poll Application with Django
+## POLL APP WITH DJANGO
 
-Clone This Project (Make Sure You Have Git Installed)
+### Clone This Project (Make Sure You Have Git Installed)
 ```
 https://github.com/esencgr/Poll_Application.git
 ```
-Install Dependencies 
+### Install Dependencies 
 
 ```
 pip install -r requirements.txt
 ```
 
-Set Database (Make Sure you are in directory same as manage.py)
+### Set Database (Make Sure you are in directory same as manage.py)
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-An EndUser participates in the survey and observes the results.
+### An EndUser participates in the survey and observes the results.
 ```
 python manage.py runserver
 ```
 
-Pages for Enduser
+### Pages for Enduser
 
-HOME 
+#### HOME 
 
 ![](images/1.png)
 
-VOTE 
+#### VOTE 
 
 ![](images/2.png)
 
-RESULTS 
+#### RESULTS 
 
-![](images/4.png)
+![](images/3.png)
 
 
-Create SuperUser for Administration(for create, delete, update polls)
+### Create SuperUser for Administration(for create, delete, update polls)
 ```
 python manage.py createsuperuser
 python manage.py runserver
 ```
-Pages for Admin
+### Pages for Admin
 
-HOME 
+#### HOME 
 
 ![](images/aa.png)
 
-CREATE
+#### CREATE
 
 ![](images/b.png)
 
-UPDATE 
+#### UPDATE 
 
 ![](images/c.png)
 
