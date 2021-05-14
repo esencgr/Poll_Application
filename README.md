@@ -34,7 +34,7 @@ python manage.py runserver
 
 #### RESULTS 
 
-![](images/3.png)
+![](images/4.png)
 
 
 ### Create SuperUser for Administration(for create, delete, update polls)
