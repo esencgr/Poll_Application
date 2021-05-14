@@ -16,11 +16,17 @@ Set Database (Make Sure you are in directory same as manage.py)
 python manage.py makemigrations
 python manage.py migrate
 ```
-Create SuperUser 
+
+An EndUser participates in the survey and observes the results.
+```
+python manage.py runserver
+```
+
+
+Create SuperUser for Administration(for create, delete, update polls)
 ```
 python manage.py createsuperuser
+python manage.py runserver
 ```
 
 After all these steps , you can start testing and developing this project. 
-
-#### That's it! Happy Coding!
