@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'poll',
     'widget_tweaks',
     'django_cleanup',
+    'user',
 ]
 
 MIDDLEWARE = [

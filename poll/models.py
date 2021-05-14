@@ -15,6 +15,6 @@ class Poll(models.Model):
     def __str__(self):
         return self.question
 
-class User(models.Model):
-    username = models.CharField(max_length=30)
-    password = models.CharField(max_length=30)
+# class User(models.Model):
+#     username = models.CharField(max_length=30)
+#     password = models.CharField(max_length=30)
