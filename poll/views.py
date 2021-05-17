@@ -4,7 +4,16 @@ from .forms import CreatePollForm
 from .models import Poll
 
 
+def index(request):
+    # polls = Poll.objects.all()
+    # context = {
+    #     'polls' : polls
+    # }
+    return render(request, 'index.html')
+
 def home(request):
+    if not request.user.is_authenticated:
+        return redirect('login')
     polls = Poll.objects.all()
     context = {
         'polls' : polls
@@ -12,7 +21,7 @@ def home(request):
     return render(request, 'home.html', context)
 
 def create(request):
-    if not request.user.is_authenticated:
+    if not request.user.is_superuser:
         raise Http404
 
     if request.method == 'POST':

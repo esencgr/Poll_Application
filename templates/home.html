@@ -17,13 +17,12 @@
                     <span class="pull-right">
                         <a href="{% url 'vote' poll.id %}" class="btn btn-info btn-xs">Vote</a> &nbsp;
                         <a href="{% url 'results' poll.id %}" class="btn btn-default btn-xs">View Results</a> &nbsp;
-                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
                             <a href="{% url 'update' poll.id %}" class="btn btn-default btn-xs">Update</a> &nbsp;
                         {% endif %}
-                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
                             <a href="{% url 'delete' poll.id %}" class="btn btn-default btn-xs btn-danger">delete</a> &nbsp;
                         {% endif %}
-                    
                     </span>
                 </li>
                 {% endfor %}

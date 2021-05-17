@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block main %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGNUP</title>
+</head>
+<body>
+	<div class="jumbotron">
+        <h1>Welcome Poll Application</h1>
+        <p class="lead">Let's Sign Up And Take The Survey</p>
+        <p><a class="btn btn-lg btn-success" href="{% url 'register' %}" role="button">Sign Up Today</a></p>
+      </div>
+</body>
+</html>
+
+{% endblock %}

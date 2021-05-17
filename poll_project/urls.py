@@ -7,7 +7,8 @@ from poll import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('signup/', views.signup, name='signup'),
-    path('', views.home, name='home'),
+    path('', views.index, name='index'),
+    path('home/', views.home, name='home'),
     path('create/', views.create, name='create'),
     path('update/<poll_id>/', views.update, name='update'),
     path('delete/<poll_id>/', views.delete, name='delete'),
