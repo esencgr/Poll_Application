@@ -21,9 +21,9 @@ def register(request):
         newUser.set_password(password)      # encrypted
 
         newUser.save()
-        login(request,newUser)
+        # login(request,newUser)
         messages.success(request,"Registration Successful..")
-        return redirect("home")
+        return redirect("login")
 
     context = {
         'form' : form,
@@ -57,4 +57,4 @@ def loginUser(request):
 def logoutUser ( request):
     logout(request)
     messages.success(request,"Logout Successful..")
-    return redirect("home")
+    return redirect("login")
