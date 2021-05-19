@@ -5,10 +5,6 @@ from .models import Poll
 
 
 def index(request):
-    # polls = Poll.objects.all()
-    # context = {
-    #     'polls' : polls
-    # }
     return render(request, 'index.html')
 
 def home(request):
@@ -61,6 +57,8 @@ def delete(request, poll_id):
     return redirect('home')
  
 def vote(request, poll_id):
+    if not request.user.is_authenticated:
+        return redirect('login')
     poll = Poll.objects.get(pk=poll_id)
     if request.method == 'POST':
         selected_option = request.POST['poll']
@@ -81,6 +79,8 @@ def vote(request, poll_id):
     return render(request, 'vote.html', context)
 
 def results(request, poll_id):
+    if not request.user.is_authenticated:
+        return redirect('login')
     poll = Poll.objects.get(pk=poll_id)
     context = {
         'poll' : poll
