@@ -18,6 +18,8 @@ Django is an open-source framework for backend web applicaitons based on Python 
 * Model-View-Template Architecture (MVT)
 
 ![](images/mvt.png)
+![](images/mvt2.png)
+
 
 ---------------------------------------------
  
