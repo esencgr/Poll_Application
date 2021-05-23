@@ -1,4 +1,26 @@
-# Poll_Application
+## DJANGO FRAMEWORK OVERVIEW
+
+Django is an open-source framework for backend web applicaitons based on Python - one of the top web development languages
+
+### DJANGO ADVANTAGES
+
+* Admin Panel
+* Pluggable
+* Libraries
+* Object-Relational-Mapper(ORM) : ORM provides a bridge between relational database tables, relationships and python objects.
+* Flask - mini framework
+* Detail Error Explanations
+* User System 
+* Rich Ecosystem
+* Maturity
+* Security
+* Good for SEO
+* Model-View-Template Architecture (MVT)
+
+![](images/mvt.png)
+
+---------------------------------------------
+ 
 ## POLL APP WITH DJANGO
 
 ### Clone This Project (Make Sure You Have Git Installed)

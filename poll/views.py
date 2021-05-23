@@ -34,7 +34,7 @@ def create(request):
     return render(request, 'create.html', context)
 
 def update(request, poll_id):
-    if not request.user.is_authenticated:
+    if not request.user.is_superuser:
         raise Http404
 
     poll = Poll.objects.get(pk=poll_id)
@@ -49,7 +49,7 @@ def update(request, poll_id):
     return render(request, 'create.html', context)
 
 def delete(request, poll_id):
-    if not request.user.is_authenticated:
+    if not request.user.is_superuser:
         raise Http404
     
     poll = Poll.objects.get(pk=poll_id)
