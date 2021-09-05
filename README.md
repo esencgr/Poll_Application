@@ -46,6 +46,15 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+### Login Pages
+
+![](images/10.png)
+![](images/20.png)
+![](images/30.png)
+![](images/40.png)
+![](images/50.png)
+
+
 ### Pages for Enduser
 
 #### HOME 
